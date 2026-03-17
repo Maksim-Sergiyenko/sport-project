@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORTZONE | Regestration</title>
+    <link rel="stylesheet" href="registration.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <script src="registration.js" defer></script>
+</head>
+<body>
+
+    <div class="reg-wrapper">
+        <form class="reg-form">
+            <div class="logo">SPORT<span>ZONE</span></div>
+            <h2>Create Account</h2>
+            
+            <div class="input-group">
+                <label for="nickname">Nickname</label>
+                <input type="text" id="nickname" name="nickname" placeholder="Enter your nickname" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email"  placeholder="example@mail.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Telephone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+(__) ___-__-__" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="********" required>
+            </div>
+
+            <button type="submit" class="btn-reg">Registration</button>
+
+            <p class="login-link">Already have an account <a href="enter-form.html">Sing In</a></p>
+        </form>
+    </div>
+
+</body>
+</html>

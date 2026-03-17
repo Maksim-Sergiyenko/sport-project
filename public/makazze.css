@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #021217;
+  /* Темно-синій/тиловий фон як на скриншоті */
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+.article-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 10px auto;
+}
+
+/* Типографіка заголовка */
+.headline {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  /* Збільшений відступ до картинки */
+  letter-spacing: -0.02em;
+}
+
+/* Стилі для зображення */
+.main-figure {
+  margin-bottom: 30px;
+}
+
+.main-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+.image-caption {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: 10px;
+  padding: 0 2px;
+}
+
+/* Стилі тексту статті */
+.article-body p {
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+/* Жирний вступний абзац */
+.intro-text {
+  font-weight: 700;
+}
+
+.comment-input {
+  display: block;
+  margin: 30px auto;
+  background-color: #000;
+  border: 1px solid #363636;
+  border-radius: 22px;
+  padding: 10px 20px;
+  color: #efefef;
+  font-size: 15px;
+  font-family: sans-serif;
+  outline: none;
+  transition: border-color 0.2s;
+  max-width: 900px;
+  width: 100%;
+}
+
+.comment-input::placeholder {
+  color: #8e8e8e;
+}
+
+.comment-input:focus {
+  border-color: #555555;
+}
+
+.photo {
+  margin: auto;
+  width: 900px;
+}
+
+/* Адаптація для мобільних */
+@media (max-width: 600px) {
+  .headline {
+    font-size: 1.8rem;
+  }
+
+  .image-caption {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

@@ -1,0 +1,138 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Similar to news sites */
+}
+
+body {
+    background-color: #010a14; /* Very dark blue/black like the image */
+    color: white;
+}
+
+header {
+    background: #111;
+    color: white1;
+    padding: 1rem 5%;
+    margin-bottom: 13px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: rgb(21, 255, 0); 
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(21, 255, 0);
+}
+
+.news-feed-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.feed-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(21, 255, 0);
+    display: inline-block;
+}
+
+/* News Item Container */
+.news-item {
+    display: flex;
+    padding: 16px 0;
+    border-bottom: 1px solid #1a2533; /* Subtle divider */
+    gap: 20px;
+    align-items: flex-start;
+    transition: background 0.2s ease;
+}
+
+.news-item:hover {
+    background-color: rgba(0, 255, 255, 0.03); /* Extremely faint aqua hover */
+}
+
+/* Image Styling */
+.news-image {
+    flex-shrink: 0;
+    width: 180px; /* Fixed width like in screenshot */
+    height: 100px;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px; /* Rounded corners like the image */
+}
+
+/* Text Styling */
+.news-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.news-headline {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    transition: color 0.2s;
+}
+
+.news-headline:hover {
+    text-decoration: underline;
+    color: rgb(21, 255, 0)
+}
+
+.news-time {
+    font-size: 13px;
+    color: #8a96a3; /* Muted gray for time */
+}
+
+/* Responsive design for mobile phones */
+@media (max-width: 600px) {
+    .news-item {
+        flex-direction: column;
+    }
+    
+    .news-image {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .news-headline {
+        font-size: 16px;
+    }
+}
